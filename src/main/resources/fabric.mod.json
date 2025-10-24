@@ -2,25 +2,29 @@
   "schemaVersion": 1,
   "id": "asgltf",
   "version": "${version}",
-
   "name": "ASglTF",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/PC-202112021016/ASglTF"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/asgltf/icon.png",
-
   "environment": "*",
-  "entrypoints": {},
-
-      "mixins": [
-        "asgltf.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "org.andys100thedt.asgltf.client.ASglTFClient"
+    ],
+    "main": [
+      "org.andys100thedt.asgltf.ASglTF"
+    ]
+  },
+  "mixins": [
+    "asgltf.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
